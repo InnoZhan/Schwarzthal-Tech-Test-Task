@@ -11,8 +11,6 @@ if __name__ == "__main__":
     for cvr in cvrs:
         jsondata = parser.get_company_info_by_cvr(cvr)
         mycol.insert_one(jsondata)
-    driver.close()
-    driver.quit()
 
 myclient.close()
 
